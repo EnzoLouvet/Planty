@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+/* Style du logo */
+.logo {
+    margin-right: 20px; 
+}
+
+/* Style du header */
+
+#menu-item-833 {
+    background-color: #DC9F96;          /* Ceci permet de faire une couleur de fond spécifiquement pour "Commander" qui n'est pas possible de réaliser avec Elementor */
+}
+
+#menu-item-833:hover {
+    background-color: #C02E44;          /* Permet au passage du curseur le changement de couleur*/
+}
+
+#menu-item-833 a {
+    color: white;
+}
+
+#menu-item-833 a:hover, #menu-item-541 a:hover {    /* Permet d'augmenter la graisse au passage du curseur sur "commander" et "nous rencontrer" */
+    font-weight: 700;
+}
+
+#hfe-menu-item li{
+    font-weight: 700;
+}
+
+
+
+.nous_rencontrer_button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Formulaire "Commander" */
+
+.compteurs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 20px;  
+}
+
+.compteur {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70px;
+}
+
+.compteur input::placeholder {
+    font-size: 10px; /* Modifiez la taille du texte du placeholder selon vos préférences */
+    color: #888; /* Couleur du texte du placeholder */
+    font-family: 'Syne', sans-serif;
+}  
+
+.deux-colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.deux-colonnes h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 10px; 
+}
+
+.barre {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 500px; 
+    margin: 0 15px; 
+    margin-top: 55px;
+}
+
+.barre2 {
+    color: rgb(255, 255, 255);
+
+
+}
+
+.commander-btn {
+    display: block;
+    margin: 50px auto; 
+    background-color: #E0B9B4; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 5px; 
+    padding: 9px 57px 9px 56px;
+    height: 55px;
+    font-size: 15px;
+    font-family: 'Syne', sans-serif;
+    text-transform: capitalize;
+}
+
+.deux-colonnes label{
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+
+
+}
+
+.deux-colonnes input{
+    border-radius: 7px;
+    width: 383px;
+    margin-top: -20px;
+}
+
+
+.wpcf7-spinner{
+    display: none;
+}
+
+
+/* Formulaire nous rencontrer */
+
+.nous_rencontrer_button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #E0B9B4;
+
+
+}
+
+.colonne_nous_rencontrer {
+    color: black;
+}
+
+.colonne_nous_rencontrer label{
+    margin-top: 22px;
+
+}
+
+.colonne_nous_rencontrer textarea{
+    width: 383px;
+    height: 237px;
+    border-radius: 7px;
+
+
+}
+
+
+
+
+
+
+
+/* Styles pour les écrans plus petits que 768 pixels (tablettes) */
+@media screen and (max-width: 1080px) {
+
+    .deux-colonnes {
+        flex-direction: column; /* Empile les colonnes au lieu de les afficher côte à côte */
+        align-items: center; /* Centre le contenu verticalement */
+
+    }
+
+    .deux-colonnes H2 {
+        flex-direction: column; /* Empile les colonnes au lieu de les afficher côte à côte */
+        align-items: center; /* Centre le contenu verticalement */
+        margin-top: 100px;
+        
+    }
+
+    .commander-btn {
+        margin: 10px auto; /* Centre le bouton et réduit la marge au-dessus */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .colonne {
+        padding-right: 0; /* Supprime la marge interne à droite dans les colonnes */
+    }
+
+    .barre {
+        display: none; /* Masque la barre entre les colonnes sur les tablettes */
+    }
+    .colonne input{
+        width: 300px;
+    }
+
+    .colonne_nous_rencontrer textarea{
+        width: 250px;
+        height: 237px;
+    
+    
+    }
+
+    .colonne_nous_rencontrer input{
+        width: 250px;
+        height: 50px;
+    
+
+   
+}
+
+}
